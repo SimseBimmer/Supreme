@@ -4,7 +4,8 @@
 body {
     background-image: url(https://eu.supreme.com/cdn/shop/files/home_skate_boarder.gif?v=1660166414);
     overflow: hidden;
-
+    background-size: cover;
+    background-color: #667;
 }
 
 p,
@@ -12,14 +13,14 @@ a {
     color: #ddd;
     font-family: "Courier Prime", monospace;
     font-weight: 100;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     letter-spacing: 2px;
     text-decoration: none;
 }
 
 header {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 
 main {
@@ -38,5 +39,71 @@ main {
 }
 
 .list li a {
-    font-size: 18px;
+    font-size: 1.5rem;
+}
+
+/* LIST HOVER */
+.list li a {
+    background-color: transparent;
+    border-radius: .15rem;
+    transition: 400ms ease;
+}
+
+.list li a:hover {
+    background-color: red;
+}
+
+
+/* NAVIGATION */
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 2rem;
+    padding: 0;
+}
+
+.navigation ul li {
+    list-style: none;
+    margin-right: 28px;
+    opacity: .2;
+    transition: opacity 500ms ease; /* Transition for opacity */
+}
+
+/* svg nav images */
+/* insta */
+.navigation ul li:first-of-type {
+    position: relative;
+    bottom: 2px;
+}
+
+/* youtube */
+.navigation ul li:nth-child(2) {
+    position: relative;
+    bottom: 11px;
+    margin-left: 15px;
+}
+
+/* facebook */
+.navigation ul li:nth-child(3) {
+    position: relative;
+    margin-left: 20px;
+}
+
+/* spotify */
+.navigation ul li:nth-child(4) {
+    position: relative;
+    bottom: 2px;
+}
+
+/* wechat */
+.navigation ul li:nth-child(5) {
+    position: relative;
+    bottom: 1px;
+    margin-left: 15px;
+}
+
+/* navigation hover */
+.navigation ul li:hover {
+    opacity: .85; 
 }
