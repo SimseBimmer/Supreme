@@ -1,0 +1,42 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+body {
+    background-image: url(https://eu.supreme.com/cdn/shop/files/home_skate_boarder.gif?v=1660166414);
+    overflow: hidden;
+
+}
+
+p,
+a {
+    color: #ddd;
+    font-family: "Courier Prime", monospace;
+    font-weight: 100;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    margin-top: 100px;
+}
+
+main {
+    align-content: center;
+}
+
+/* LIST */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.list li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.list li a {
+    font-size: 18px;
+}
