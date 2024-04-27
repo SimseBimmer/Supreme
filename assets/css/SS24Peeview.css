@@ -16,7 +16,7 @@ body {
 
 }
 
-
+/* #region HEADER */
 main {
     display: flex;
     justify-content: center;
@@ -36,49 +36,39 @@ header p {
     margin-bottom: 5rem;
 }
 
-
-/* GRID */
+/* #endregion HEADER */
+/* grid */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    width: 45%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3px;
+    width: 560px;
+    position: relative;
+    bottom: 3.5rem;
 }
 
-.grid-item {
-    position: relative;
-    bottom: 3rem;
-}
 
 .grid-item img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     opacity: 1;
-    transition: 350ms ease;
 }
-
-.grid-item p {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 10px;
-    background-color: #3333338e;
-    color: white;
-    font-size: .8rem;
-    padding: 5px 10px;
-    transition: 350ms;
-
-}
-
-.grid-item:hover img {
+/* hover */
+.grid-item img:hover{
     opacity: .5;
-    cursor: pointer;
+    transition: 200ms;
 }
-.grid-item:hover p {
-    background-color: red;
-    transition: 350ms;
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -106,11 +96,24 @@ header p {
     letter-spacing: 1px;
 }
 
-.list li:nth-child(9),
+.list div{
+    position: relative;
+    bottom: 10rem;
+    right: 4rem;
+}
+.list div li:last-of-type{
+    position: relative;
+    right: .5rem;
+}
+
+
 .list li:nth-child(10),
-.list li:nth-child(11) {
+.list li:nth-child(11),
+.list li:nth-child(12) {
     margin-top: 3.5rem;
     margin-left: .5rem;
+    position: relative;
+    right: 8.95rem;
 }
 
 /* hover effects */
