@@ -1,0 +1,194 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+body {
+    /* background-image: url(); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    /* background-size: 126rem; */
+    /* background-position-x: -100px; */
+    font-family: "Courier Prime", monospace;
+    transition: 400ms;
+
+}
+
+/* #region HEADER */
+main {
+    display: flex;
+    justify-content: center;
+    margin-left: 13rem;
+}
+
+header img {
+    padding-top: 8rem;
+    font-family: "Courier Prime", monospace;
+}
+
+header,
+header p {
+    text-align: center;
+}
+
+/* #endregion HEADER */
+
+/* general */
+.containerOne {
+    display: flex;
+    left: 6rem;
+    position: relative;
+
+}
+
+
+
+/* left side */
+.clothing-links {
+    position: absolute;
+    left: 20px; 
+    top: 32%;
+    margin: 0;
+    width: 300px;
+}
+
+
+
+.clothing-links p,
+.clothing-links ul li a {
+    color: #757575;
+    font-family: "Courier Prime", monospace;
+    text-decoration: none;
+    font-size: .7rem;
+    font-weight: 500;
+    border-radius: 2px;
+    letter-spacing: 2px;
+    margin: 0;
+    background-color: transparent;
+    border-radius: .15rem;
+    transition: 400ms ease;
+}
+
+
+
+.clothing-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* right side */
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 27rem;
+}
+
+.grid-container a {
+    display: block;
+    width: 52px;
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    /* right: 25rem; */
+    padding: 1px;
+}
+.grid-container img.selected {
+    border: 1px solid red; /* Change 'blue' to the desired color */
+    padding: 0;
+
+}
+
+/* buttons */
+.image-switchers {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 23rem;
+    bottom: 2.7rem;
+  }
+
+  #next-btn, #prev-btn{
+    position: relative;
+    left: 0rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #next-btn img , #prev-btn img{
+    width: 20px;
+  }
+  #prev-btn {
+    position: relative;
+    left: 0;
+  }
+
+  .page-counter {
+    width: 100px;
+    text-align: center;
+  }
+
+
+
+
+
+
+/* #region FOOTER */
+.list {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 8rem;
+    left: 30%;
+}
+
+.list li {
+    list-style-type: none;
+    margin-right: 1rem;
+
+}
+
+.list li a {
+    color: #757575;
+    text-decoration: none;
+    font-family: "Courier Prime", monospace;
+    font-weight: 100;
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+
+.list li:nth-child(9),
+.list li:nth-child(10),
+.list li:nth-child(11) {
+    margin-top: 3.5rem;
+    margin-left: .5rem;
+}
+
+/* hover effects */
+/* LIST HOVER */
+.list li a {
+    background-color: transparent;
+    border-radius: .15rem;
+    transition: 400ms ease;
+}
+
+.list li a:hover,
+.archive a:hover,
+.clothing-links ul li a:hover {
+    background-color: red;
+    color: #fff;
+}
+
+/* #endregion FOOTER */
