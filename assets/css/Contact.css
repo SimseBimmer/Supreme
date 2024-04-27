@@ -12,6 +12,8 @@ body {
     /* background-size: 126rem; */
     /* background-position-x: -100px; */
     font-family: "Courier Prime", monospace;
+    transition: 400ms;
+
 }
 
 
@@ -163,6 +165,7 @@ h4 {
 
 .list li a:hover {
     background-color: red;
+    color: #fff;
 }
 
 /* #endregion FOOTER */

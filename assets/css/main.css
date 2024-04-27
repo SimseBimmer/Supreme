@@ -6,6 +6,8 @@ body {
     overflow: hidden;
     background-size: cover;
     background-color: #667;
+    transition: 400ms;
+
 }
 
 p,
@@ -51,6 +53,7 @@ main {
 
 .list li a:hover {
     background-color: red;
+    color: #fff;
 }
 
 
